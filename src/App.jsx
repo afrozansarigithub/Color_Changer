@@ -1,10 +1,14 @@
 import React from 'react'
-import Color from './Color'
+// import Color from './Color'
+// import Pushdata from './component/Pushdata'
+import Todolist from './component/Todolist'
 
 const App = () => {
   return (
     <div>
-      <Color/>
+      {/* <Pushdata/> */}
+      <Todolist/>
+      {/* <Color/> */}
     </div>
   )
 }
