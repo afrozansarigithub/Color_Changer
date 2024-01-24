@@ -1,8 +1,11 @@
 import React from 'react'
+import Color from './Color'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <Color/>
+    </div>
   )
 }
 
