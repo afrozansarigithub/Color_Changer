@@ -18,13 +18,28 @@ const Todolist = () => {
       completed:true
     },
   ];
-  let addtask=()=>{
-    
+
+  const[task,setTask]=useState([details]);
+  const[text,setText]=useState('');
+
+  let addtask=(text)=>{
+    const newTask={
+      id:Date.now(),
+      text,
+      completed:false
+    }
+    setTask([...task,newTask]);
+    setTask('');
+
+
   }
-  const[task,setTask]=useState([details])
   return (
     <div>
       <h1>todo list</h1>
+      <input type="text"
+      value={text}
+      onChange={(e)=>setText(e.target.value)}
+      />
       <button onClick={()=>addtask}>Add</button>
     </div>
   )
